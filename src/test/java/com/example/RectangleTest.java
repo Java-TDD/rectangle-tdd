@@ -13,5 +13,7 @@ public class RectangleTest {
         int four = 4, two = 2, eight = 8;
         Rectangle rectangle = new Rectangle(four, two);
 
+        int areaOfRectangle4x2 = rectangle.calculateArea();
+        assertThat(areaOfRectangle4x2, is(equalTo(eight)));
     }
 }
