@@ -12,4 +12,8 @@ public class Rectangle {
     public int calculateArea() {
         return length * breadth;
     }
+
+    public int calculatePerimeter() {
+        return 2 * (length + breadth);
+    }
 }

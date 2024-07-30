@@ -29,4 +29,16 @@ public class RectangleTest {
             assertThat(areaOfRectangle0x3, is(equalTo(zero)));
         }
     }
+
+    @Nested
+    class Perimeter{
+        @Test
+        public void toReturnTenAsPerimeterWhenLengthAndBreadthIsThreeAndTwo(){
+            int two = 2, three = 3, ten = 10;
+            Rectangle rectangle = new Rectangle(two, three);
+
+            int perimeterOfRectangle2x3 = rectangle.calculatePerimeter();
+            assertThat(perimeterOfRectangle2x3, is(equalTo(ten)));
+        }
+    }
 }
