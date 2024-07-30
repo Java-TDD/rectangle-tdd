@@ -16,4 +16,13 @@ public class RectangleTest {
         int areaOfRectangle4x2 = rectangle.calculateArea();
         assertThat(areaOfRectangle4x2, is(equalTo(eight)));
     }
+
+    @Test
+    public void toReturnZeroAsAreaOfRectangleWhenLengthAndBreadthIsZeroAndThree(){
+        int zero = 0, three = 3;
+        Rectangle rectangle = new Rectangle(zero, three);
+
+        int areaOfRectangle0x3 = rectangle.calculateArea();
+        assertThat(areaOfRectangle0x3, is(equalTo(zero)));
+    }
 }
