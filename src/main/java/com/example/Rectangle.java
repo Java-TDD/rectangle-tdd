@@ -1,5 +1,6 @@
 package com.example;
 
+
 public class Rectangle {
 
     int length;
@@ -15,5 +16,9 @@ public class Rectangle {
 
     public int calculatePerimeter() {
         return 2 * (length + breadth);
+    }
+
+    public static Rectangle createSquare(int side){
+        return new Rectangle(side, side);
     }
 }
